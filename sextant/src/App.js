@@ -2,6 +2,7 @@ import './App.css';
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
 import AddressDisplay from './components/AddressDisplay';
+import PylonConnector from './components/PylonConnector';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       </Exhibit>
       <Exhibit name='Public IPv6 Address'>
         <AddressDisplay url='https://api64.ipify.org?format=json' />
+      </Exhibit>
+      <Exhibit name='Pylon Packet Latency'>
+        <PylonConnector />
       </Exhibit>
     </div>
   );
